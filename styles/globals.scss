@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap");
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+html,
+body {
+   font-family: "Poppins", sans-serif;
+   font-size: 10px;
+   height: 100%;
+}
+
+#__next {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+/* font-family: 'Exo 2', sans-serif; */
+
+@media only screen and (max-width: 1200px) {
+   html,
+   body {
+      font-size: 8px;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   html,
+   body {
+      font-size: 7px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   html,
+   body {
+      font-size: 6px;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   html,
+   body {
+      font-size: 5px;
+   }
+}
