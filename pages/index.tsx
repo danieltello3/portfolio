@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import avatar from "../assets/images/Memoji_laptop.png";
 import { useEffect, useState } from "react";
+import Skills from "../components/Skills";
 
 const Home: NextPage = () => {
    //const [matchs, setMatchs] = useState(true);
@@ -41,6 +42,7 @@ const Home: NextPage = () => {
                </div>
             </div>
             <div className={styles.skills}></div>
+            <Skills />
             <div className={styles.titulo}>
                <p>PROYECTOS</p>
                <div></div>

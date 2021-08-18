@@ -1,0 +1,40 @@
+.main {
+   height: 160px;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   background-color: #333;
+
+   & .track {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      width: calc(70px * 26);
+      perspective: 100px;
+      animation: scroll 10s linear infinite;
+
+      &:hover {
+         animation-play-state: paused;
+      }
+
+      & .imageContainer {
+         filter: grayscale(1) contrast(0.5);
+         width: 70px;
+         transition: transform 0.2s ease-in-out;
+
+         &:hover {
+            filter: grayscale(0) contrast(1);
+            transform: scale(1.2);
+         }
+      }
+   }
+}
+
+@keyframes scroll {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-70px * 13);
+   }
+}
