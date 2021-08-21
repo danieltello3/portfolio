@@ -3,8 +3,10 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import avatar from "../assets/images/Memoji_laptop.png";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Skills from "../components/Skills";
+import Proyecto from "../components/Proyecto";
+import img from "../assets/images/mejores-practicas-diseno-web-es-1024x512.jpg";
 
 const Home: NextPage = () => {
    //const [matchs, setMatchs] = useState(true);
@@ -41,12 +43,12 @@ const Home: NextPage = () => {
                   <Image src={avatar} layout="responsive"></Image>
                </div>
             </div>
-            <div className={styles.skills}></div>
             <Skills />
             <div className={styles.titulo}>
                <p>PROYECTOS</p>
                <div></div>
             </div>
+            <Proyecto img={img} />
             <div className={styles.titulo}>
                <p>FOTOS</p>
                <div></div>

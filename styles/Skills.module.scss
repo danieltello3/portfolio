@@ -1,25 +1,35 @@
 .main {
-   height: 160px;
    width: 100%;
-   overflow: hidden;
-   position: relative;
    background-color: #333;
+   overflow: hidden;
+   text-align: center;
+
+   & p {
+      vertical-align: middle;
+      padding-top: 15px;
+      font-size: 3.6rem;
+      font-weight: 600;
+      color: #989898;
+   }
 
    & .track {
       display: flex;
-      gap: 50px;
       align-items: center;
-      width: calc(70px * 26);
+      gap: 70px;
+      height: 140px;
+      width: calc(140px * 26);
+      overflow: hidden;
+      align-items: center;
       perspective: 100px;
-      animation: scroll 10s linear infinite;
+      animation: scroll 30s linear infinite;
 
       &:hover {
          animation-play-state: paused;
       }
 
       & .imageContainer {
-         filter: grayscale(1) contrast(0.5);
          width: 70px;
+         filter: grayscale(1) contrast(0.5);
          transition: transform 0.2s ease-in-out;
 
          &:hover {
@@ -30,9 +40,20 @@
    }
 }
 
+@media only screen and (max-width: 768px) {
+   .main {
+      & .track {
+         height: 120px;
+         & .imageContainer {
+            width: 50px;
+         }
+      }
+   }
+}
+
 @keyframes scroll {
    0% {
-      transform: translateX(0);
+      transform: translateX(70px);
    }
    100% {
       transform: translateX(-70px * 13);

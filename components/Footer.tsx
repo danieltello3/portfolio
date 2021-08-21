@@ -42,7 +42,10 @@ const Footer = () => {
                      <path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z" />
                   </svg>
                </a>
-               <a href="" className={footerStyles.github}>
+               <a
+                  href="https://github.com/danieltello3"
+                  target="_blank"
+                  className={footerStyles.github}>
                   <svg
                      height="30"
                      viewBox="0 0 16 16"
@@ -52,7 +55,10 @@ const Footer = () => {
                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
                   </svg>
                </a>
-               <a href="" className={footerStyles.whatsapp}>
+               <a
+                  href="https://wa.me/51999036353"
+                  target="_blank"
+                  className={footerStyles.whatsapp}>
                   <svg
                      height="30px"
                      viewBox="0 0 24 24"
@@ -62,7 +68,10 @@ const Footer = () => {
                      <path d="m20.52 3.449c-7.689-7.433-20.414-2.042-20.419 8.444 0 2.096.549 4.14 1.595 5.945l-1.696 6.162 6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99z" />
                   </svg>
                </a>
-               <a href="" className={footerStyles.instagram}>
+               <a
+                  href="https://www.instagram.com/danieltello3"
+                  target="_blank"
+                  className={footerStyles.instagram}>
                   <svg
                      height="30px"
                      viewBox="0 0 24 24"
@@ -73,7 +82,10 @@ const Footer = () => {
                      <circle cx="18.406" cy="5.595" r="1.439" />
                   </svg>
                </a>
-               <a href="" className={footerStyles.twitter}>
+               <a
+                  href="https://twitter.com/danieltello3"
+                  target="_blank"
+                  className={footerStyles.twitter}>
                   <svg
                      height="30px"
                      viewBox="0 0 24 24"

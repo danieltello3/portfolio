@@ -33,6 +33,7 @@ const skills = [
 const Skills = () => {
    return (
       <div className={skillStyle.main}>
+         <p>CONOCIMIENTOS</p>
          <div className={skillStyle.track}>
             {skills.map((obj, index) => (
                <div className={skillStyle.imageContainer} key={index}>

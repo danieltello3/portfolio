@@ -10,6 +10,7 @@ const Proyectos = () => {
       justifyContent: "center",
       gap: "30px",
       width: "90%",
+      alignSelf: "center",
    };
 
    return (
