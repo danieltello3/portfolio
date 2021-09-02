@@ -12,6 +12,7 @@ import postgres from "../assets/images/skills/postgresql.png";
 import python from "../assets/images/skills/python.png";
 import typescript from "../assets/images/skills/typescript.png";
 import express from "../assets/images/skills/expressjs.png";
+import nextjs from "../assets/images/skills/nextjs.png";
 import Image from "next/image";
 
 const skills = [
@@ -20,6 +21,7 @@ const skills = [
    { img: javascript, alt: "Javascript" },
    { img: typescript, alt: "Typescript" },
    { img: react, alt: "React" },
+   { img: nextjs, alt: "NextJs" },
    { img: python, alt: "Python" },
    { img: git, alt: "Git" },
    { img: django, alt: "Django" },

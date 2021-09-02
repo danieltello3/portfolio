@@ -25,11 +25,11 @@
       }
    }
    & .gallery {
-      columns: 200px 3;
-      column-gap: 10px;
+      width: 100%;
       & .photoHolder {
          position: relative;
-         margin-bottom: 10px;
+         max-width: calc(33% - 2px);
+         margin-bottom: 6px;
          letter-spacing: 0;
          word-spacing: 0;
          font-size: 0;
@@ -61,6 +61,26 @@
             & > .info {
                display: flex;
             }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .main {
+      .gallery {
+         .photoHolder {
+            max-width: calc(50% - 3px);
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 400px) {
+   .main {
+      .gallery {
+         .photoHolder {
+            max-width: 100%;
          }
       }
    }

@@ -17,7 +17,7 @@
       align-items: center;
       gap: 70px;
       height: 140px;
-      width: calc(140px * 26);
+      width: calc(140px * 28);
       overflow: hidden;
       align-items: center;
       perspective: 100px;
@@ -56,6 +56,6 @@
       transform: translateX(70px);
    }
    100% {
-      transform: translateX(-70px * 13);
+      transform: translateX(-70px * 14);
    }
 }

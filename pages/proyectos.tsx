@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 import Proyecto from "../components/Proyecto";
 import img from "../assets/images/mejores-practicas-diseno-web-es-1024x512.jpg";
 import styles from "../styles/Proyects.module.scss";
