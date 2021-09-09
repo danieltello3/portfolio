@@ -1,11 +1,33 @@
-import React from 'react'
+import Head from "next/head";
+import React from "react";
+import layoutStyle from "../styles/Layout.module.scss";
 
-const Layout = () => {
-    return (
-        <div>
+const Layout = ({
+   children,
+   title,
+}: {
+   children: React.ReactNode;
+   title: string;
+}) => {
+   return (
+      <div className={layoutStyle.container}>
+         <Head>
+            <title>Daniel Tello | {title}</title>
+            <meta
+               name="description"
+               content="Portafolio personal, desarrollo web y fotografía"
+            />
+            <link rel="icon" href="/favicon_dt.ico" />
+            <meta
+               property="og:image"
+               content="../assets/images/OG-portfolio.png"
+            />
+            <meta name="og:title" content="Daniel Tello | Portafolio" />
+            <meta name="twitter:card" content="summary_large_image" />
+         </Head>
+         {children}
+      </div>
+   );
+};
 
-        </div>
-    )
-}
-
-export default Layout
+export default Layout;

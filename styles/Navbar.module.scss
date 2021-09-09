@@ -117,11 +117,13 @@
          }
          &__Item {
             width: 100%;
+            transition: background 0.4s;
             &__Text {
                width: 100%;
                font-size: 24px;
                padding: 20px 0;
                &:hover {
+                  color: #fff;
                   & + .Links__Item__underline {
                      width: 100%;
                      background-color: #cfcfcf;
@@ -131,6 +133,10 @@
             &__underline {
                width: 100%;
                background-color: #cfcfcf;
+            }
+            &:hover,
+            &:active {
+               background-color: #613989;
             }
          }
       }
