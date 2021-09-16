@@ -39,13 +39,25 @@
             }
          }
       }
+      &__ItemCta {
+         background-color: #613989;
+         border-radius: 20px;
+         margin: 0.5rem 4rem;
+         min-height: 1rem;
+         &:hover {
+            background-color: #7848a8;
+         }
+         &__Text {
+            font-size: 2.4rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 4rem;
+         }
+      }
    }
 }
 
 @media only screen and (max-width: 768px) {
-   // .navbar__Item__Text {
-   //    padding: 0.5rem 2rem;
-   // }
    .navbar {
       height: 70px;
       position: relative;
@@ -137,6 +149,17 @@
             &:hover,
             &:active {
                background-color: #613989;
+            }
+         }
+         &__ItemCta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            margin-top: 15px;
+            &__Text {
+               padding: 13px 12rem;
+               font-size: 24px;
             }
          }
       }

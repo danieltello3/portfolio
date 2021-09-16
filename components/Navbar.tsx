@@ -70,6 +70,16 @@ const Navbar = () => {
                </Link>
                <div className={navStyles.Links__Item__underline}></div>
             </li>
+            <li className={navStyles.Links__ItemCta}>
+               <Link href="/CV_DANIEL_TELLO.pdf">
+                  <a
+                     className={navStyles.Links__ItemCta__Text}
+                     onClick={handleMenu}
+                     target="_blank">
+                     CV
+                  </a>
+               </Link>
+            </li>
          </div>
       </nav>
    );
