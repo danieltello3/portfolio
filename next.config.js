@@ -4,4 +4,7 @@ module.exports = {
    images: {
       domains: ["storage.googleapis.com"],
    },
+   env: {
+      BACKEND_URL: process.env.BACKEND_URL,
+   },
 };

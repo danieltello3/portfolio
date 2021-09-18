@@ -1,5 +1,9 @@
 @use 'variables';
 
+.popupSweetAlert {
+   font-size: 2rem !important;
+}
+
 .container {
    width: 80%;
    margin: auto;
@@ -47,6 +51,9 @@
          &:focus {
             border-color: variables.$purple-main;
          }
+         &.error {
+            border-color: rgb(219, 54, 54);
+         }
       }
       &__label {
          cursor: text;
@@ -68,6 +75,11 @@
          &:focus {
             background-color: variables.$purple-light;
          }
+      }
+      &__error {
+         color: rgb(219, 54, 54);
+         font-size: 14px;
+         margin: -10px 0 10px 10px;
       }
    }
 }
