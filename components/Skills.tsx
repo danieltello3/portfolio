@@ -2,7 +2,7 @@ import Image from "next/image";
 import skillStyle from "../styles/Skills.module.scss";
 import react from "../public/React.png";
 import git from "../public/Git.png";
-import css from "../public/Css.png";
+import css from "../public/CSS.png";
 import django from "../public/Django.png";
 import flask from "../public/flask.png";
 import html from "../public/html.png";
