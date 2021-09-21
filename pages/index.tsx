@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Skills from "../components/Skills";
 import Proyecto from "../components/Proyecto";
-import avatar from "../assets/images/memoji_laptop.png";
+import avatar from "../public/memoji_laptop.png";
 import axios from "axios";
 import { IImage, TProyecto } from "../types";
 import Link from "next/link";
