@@ -18,10 +18,7 @@ const Layout = ({
                content="Portafolio personal, desarrollo web y fotografía"
             />
             <link rel="icon" href="/favicon_dt.ico" />
-            <meta
-               property="og:image"
-               content="../assets/images/OG-portfolio.png"
-            />
+            <meta property="og:image" content="../public/OG-portfolio.png" />
             <meta name="og:title" content="Daniel Tello | Portafolio" />
             <meta name="twitter:card" content="summary_large_image" />
          </Head>
