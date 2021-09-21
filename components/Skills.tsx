@@ -1,21 +1,33 @@
 import Image from "next/image";
 import skillStyle from "../styles/Skills.module.scss";
+import react from "public/React.png";
+import git from "public/Git.png";
+import css from "public/Css.png";
+import django from "public/Django.png";
+import flask from "public/flask.png";
+import html from "public/html.png";
+import javascript from "public/javascript-escudo.png";
+import mongodb from "../public/MongoDB.png";
+import nodejs from "public/nodejs.png";
+import postgres from "public/postgresql.png";
+import python from "public/python.png";
+import typescript from "public/typescript.png";
+import express from "public/expressjs.png";
 
 const skills = [
-   { img: "/html.png", alt: "Html" },
-   { img: "/Css.png", alt: "Css" },
-   { img: "/javascript-escudo.png", alt: "Javascript" },
-   { img: "/typescript.png", alt: "Typescript" },
-   { img: "/React.png", alt: "React" },
-   { img: "/nextjs.png", alt: "NextJs" },
-   { img: "/python.png", alt: "Python" },
-   { img: "/Git.png", alt: "Git" },
-   { img: "/Django.png", alt: "Django" },
-   { img: "/flask.png", alt: "Flask" },
-   { img: "/nodejs.png", alt: "NodeJS" },
-   { img: "/postgresql.png", alt: "PostgreSQL" },
-   { img: "/MongoDB.png", alt: "MongoDB" },
-   { img: "/expressjs.png", alt: "ExpressJS" },
+   { img: html, alt: "Html" },
+   { img: css, alt: "Css" },
+   { img: javascript, alt: "Javascript" },
+   { img: typescript, alt: "Typescript" },
+   { img: react, alt: "React" },
+   { img: python, alt: "Python" },
+   { img: git, alt: "Git" },
+   { img: django, alt: "Django" },
+   { img: flask, alt: "Flask" },
+   { img: nodejs, alt: "NodeJS" },
+   { img: postgres, alt: "PostgreSQL" },
+   { img: mongodb, alt: "MongoDB" },
+   { img: express, alt: "ExpressJS" },
 ];
 
 const Skills = () => {
