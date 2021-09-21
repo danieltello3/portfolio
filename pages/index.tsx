@@ -1,9 +1,9 @@
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import avatar from "../assets/images/Memoji_laptop.png";
 import Skills from "../components/Skills";
 import Proyecto from "../components/Proyecto";
+import avatar from "../assets/images/memoji_laptop.png";
 import axios from "axios";
 import { IImage, TProyecto } from "../types";
 import Link from "next/link";
@@ -44,7 +44,10 @@ const Home = ({
                      </p>
                   </div>
                   <div className={styles.image}>
-                     <Image src={avatar} layout="responsive"></Image>
+                     <Image
+                        src={avatar}
+                        alt="Daniel-picture"
+                        layout="responsive"></Image>
                   </div>
                </div>
                <Skills />
@@ -89,6 +92,7 @@ const Home = ({
                <div className={styles.fotos}>
                   <Image
                      src={imageData.url}
+                     alt={imageData.name}
                      width={imageData.width * 400}
                      height={imageData.height * 400}
                   />

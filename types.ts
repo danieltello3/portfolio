@@ -1,5 +1,5 @@
 export interface IImage {
-   _id: string;
+   _id?: string;
    path: string;
    location: string;
    date: number;
@@ -10,6 +10,7 @@ export interface IImage {
 }
 
 export type TProyecto = {
+   _id?: string;
    image: {
       _id?: string;
       name: string;

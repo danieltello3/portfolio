@@ -34,6 +34,7 @@ const Footer = () => {
                <a
                   href="https://www.linkedin.com/in/danieltelloc/"
                   target="_blank"
+                  rel="noreferrer"
                   className={footerStyles.linkedin}>
                   <svg
                      height="25px"
@@ -48,6 +49,7 @@ const Footer = () => {
                <a
                   href="https://github.com/danieltello3"
                   target="_blank"
+                  rel="noreferrer"
                   className={footerStyles.github}>
                   <svg
                      height="30"
@@ -61,6 +63,7 @@ const Footer = () => {
                <a
                   href="https://wa.me/51999036353"
                   target="_blank"
+                  rel="noreferrer"
                   className={footerStyles.whatsapp}>
                   <svg
                      height="30px"
@@ -74,6 +77,7 @@ const Footer = () => {
                <a
                   href="https://www.instagram.com/danieltello3"
                   target="_blank"
+                  rel="noreferrer"
                   className={footerStyles.instagram}>
                   <svg
                      height="30px"
@@ -88,6 +92,7 @@ const Footer = () => {
                <a
                   href="https://twitter.com/danieltello3"
                   target="_blank"
+                  rel="noreferrer"
                   className={footerStyles.twitter}>
                   <svg
                      height="30px"

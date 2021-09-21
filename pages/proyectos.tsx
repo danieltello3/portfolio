@@ -25,6 +25,7 @@ const Proyectos = ({ data }: { data: Array<TProyecto> }) => {
             </div>
             {data.map((project) => (
                <Proyecto
+                  key={project._id}
                   image={project.image}
                   title={project.title}
                   description={project.description}

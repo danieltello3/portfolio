@@ -42,6 +42,7 @@ const Fotos = ({ data }: { data: Array<IImage> }) => {
                            src={foto.url}
                            width={foto.width * 550}
                            height={foto.height * 550}
+                           alt={foto.name}
                         />
                         <div className={photoStyles.info}>
                            <p>{`${foto.location} - ${foto.date}`}</p>
