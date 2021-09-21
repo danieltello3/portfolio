@@ -1,10 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import linkedin from "../assets/icons/linkedin.svg";
-import github from "../assets/icons/github.svg";
-import instagram from "../assets/icons/instagram.svg";
-import twitter from "../assets/icons/twitter.svg";
-import whatsapp from "../assets/icons/whatsapp.svg";
 import footerStyles from "../styles/Footer.module.scss";
 
 const Footer = () => {

@@ -8,3 +8,16 @@ export interface IImage {
    url: string;
    name: string;
 }
+
+export type TProyecto = {
+   image: {
+      _id?: string;
+      name: string;
+      path: string;
+      url: string;
+   };
+   title: string;
+   description: string;
+   link?: string;
+   githubLinks?: { _id?: string; frontend?: string; backend?: string };
+};

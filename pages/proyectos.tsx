@@ -1,8 +1,21 @@
+import { GetStaticProps } from "next";
+import axios from "axios";
 import Proyecto from "../components/Proyecto";
-import img from "../assets/images/mejores-practicas-diseno-web-es-1024x512.jpg";
 import styles from "../styles/Proyects.module.scss";
 import Layout from "../components/Layout";
-const Proyectos = () => {
+import { TProyecto } from "../types";
+
+export const getStaticProps: GetStaticProps = async () => {
+   const res = await axios.get(`${process.env.BACKEND_URL}/projects`);
+   const data = await res.data.content;
+
+   return {
+      props: { data },
+      revalidate: 604800,
+   };
+};
+
+const Proyectos = ({ data }: { data: Array<TProyecto> }) => {
    return (
       <Layout title="Proyectos">
          <div className={styles.main}>
@@ -10,9 +23,15 @@ const Proyectos = () => {
                <p>PROYECTOS</p>
                <div></div>
             </div>
-            <Proyecto img={img} />
-            <Proyecto img={img} />
-            <Proyecto img={img} />
+            {data.map((project) => (
+               <Proyecto
+                  image={project.image}
+                  title={project.title}
+                  description={project.description}
+                  link={project.link}
+                  githubLinks={project.githubLinks}
+               />
+            ))}
          </div>
       </Layout>
    );

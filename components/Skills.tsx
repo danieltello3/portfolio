@@ -1,3 +1,4 @@
+import Image from "next/image";
 import skillStyle from "../styles/Skills.module.scss";
 import react from "../assets/images/skills/React.png";
 import git from "../assets/images/skills/Git.png";
@@ -13,7 +14,6 @@ import python from "../assets/images/skills/python.png";
 import typescript from "../assets/images/skills/typescript.png";
 import express from "../assets/images/skills/expressjs.png";
 import nextjs from "../assets/images/skills/nextjs.png";
-import Image from "next/image";
 
 const skills = [
    { img: html, alt: "Html" },

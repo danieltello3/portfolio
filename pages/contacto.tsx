@@ -1,7 +1,6 @@
 import axios from "axios";
 import { SubmitHandler, useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 import styles from "../styles/contact.module.scss";
 
 const MySwal = Swal;

@@ -1,13 +1,11 @@
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
-import Head from "next/head";
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import avatar from "../assets/images/Memoji_laptop.png";
 import Skills from "../components/Skills";
 import Proyecto from "../components/Proyecto";
-import img from "../assets/images/mejores-practicas-diseno-web-es-1024x512.jpg";
 import axios from "axios";
-import { IImage } from "../types";
+import { IImage, TProyecto } from "../types";
 import Link from "next/link";
 import Layout from "../components/Layout";
 
@@ -15,13 +13,20 @@ export const getStaticProps: GetStaticProps = async () => {
    const res = await axios.get(
       `${process.env.BACKEND_URL}/images/612d8e9128bfb31428f5d1da`
    );
-   const data: IImage = await res.data.content;
+   const imageData: IImage = await res.data.content;
+   const resProject = await axios.get(
+      `${process.env.BACKEND_URL}/project/61492fe151b479001660236c`
+   );
+   const projectData: TProyecto = resProject.data.content;
    return {
-      props: { data },
+      props: { imageData, projectData },
    };
 };
 
-const Home = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home = ({
+   imageData,
+   projectData,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
    return (
       <Layout title="Inicio">
          <div className={styles.container}>
@@ -30,12 +35,12 @@ const Home = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
                   <div className={styles.about}>
                      <h4>Hola, Soy</h4>
                      <h3>Daniel Tello</h3>
-                     <h6>Backend Developer</h6>
+                     <h6>Web Developer</h6>
                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        ut aliquam, purus sit amet luctus venenatis, lectus
-                        magna fringilla urna, porttitor rhoncus dolor purus non
-                        enim praesent elementum.
+                        Apasionado a la tecnología, con muchas ganas de ampliar
+                        mi conocimiento y experiencia en el desarrollo web. Me
+                        gusta tomar fotos, así que comparto por aquí algunas de
+                        mis mejores fotos.
                      </p>
                   </div>
                   <div className={styles.image}>
@@ -48,7 +53,13 @@ const Home = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
                   <div></div>
                </div>
                <div className={styles.projects}>
-                  <Proyecto img={img} />
+                  <Proyecto
+                     image={projectData.image}
+                     title={projectData.title}
+                     description={projectData.description}
+                     link={projectData.link}
+                     githubLinks={projectData.githubLinks}
+                  />
                   <Link href="/proyectos">
                      <a className={styles.links}>
                         <svg
@@ -77,9 +88,9 @@ const Home = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
                </div>
                <div className={styles.fotos}>
                   <Image
-                     src={data.url}
-                     width={data.width * 400}
-                     height={data.height * 400}
+                     src={imageData.url}
+                     width={imageData.width * 400}
+                     height={imageData.height * 400}
                   />
                   <Link href="/fotos">
                      <a className={styles.links}>

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Masonry from "react-masonry-component";
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import axios from "axios";
 import photoStyles from "../styles/Photos.module.scss";
 import { IImage } from "../types";
 import Layout from "../components/Layout";
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
    const res = await axios.get(`${process.env.BACKEND_URL}/images`);
    const data = await res.data.content;
    data.sort((a: IImage, b: IImage) => {
@@ -18,6 +18,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
    });
    return {
       props: { data },
+      revalidate: 604800,
    };
 };
 
