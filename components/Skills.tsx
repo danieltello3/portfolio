@@ -9,10 +9,10 @@ import html from "../public/html.png";
 import javascript from "../public/javascript-escudo.png";
 import mongodb from "../public/MongoDB.png";
 import nodejs from "../public/nodejs.png";
-import postgres from "../public/postgresql.png";
+import postgres from "../public/Postgresql.png";
 import python from "../public/python.png";
-import typescript from "../public/typescript.png";
-import express from "../public/expressjs.png";
+import typescript from "../public/Typescript.png";
+import express from "../public/Expressjs.png";
 
 const skills = [
    { img: html, alt: "Html" },
