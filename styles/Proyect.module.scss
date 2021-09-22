@@ -8,59 +8,60 @@
 
    & .barra {
       background-color: #613989;
-      width: 20px;
+      width: 15px;
       height: 100%;
-      z-index: 2;
       border-radius: 10px 0 0 10px;
    }
    & .mainbody {
       display: flex;
+      width: 835px;
       height: 80%;
-   }
 
-   & .info {
-      color: #fff;
-      width: 50%;
-      font-size: 2rem;
-      padding: 10px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      & .content {
-         & h5 {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-         }
-      }
-      & .links {
+      & .info {
+         color: #fff;
+         width: 50%;
+         font-size: 2rem;
+         padding: 10px 20px;
          display: flex;
          flex-direction: column;
-         gap: 20px;
-         padding-bottom: 20px;
-         & a {
-            padding-left: 15px;
-            text-decoration: none;
-            color: #fff;
-            &:hover {
-               text-decoration-line: underline;
+         justify-content: space-between;
+
+         & .content {
+            & h5 {
+               font-size: 3rem;
+               font-weight: 600;
+               margin-bottom: 20px;
             }
          }
-         & svg {
-            fill: #fff;
-            width: 30px;
-         }
-         &__externalLink {
+         & .links {
             display: flex;
-            align-items: center;
-         }
-         &__github {
-            display: flex;
-            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 20px;
+            & a {
+               padding-left: 15px;
+               text-decoration: none;
+               color: #fff;
+               &:hover {
+                  text-decoration-line: underline;
+               }
+            }
+            & svg {
+               fill: #fff;
+               width: 30px;
+            }
+            &__externalLink {
+               display: flex;
+               align-items: center;
+            }
+            &__github {
+               display: flex;
+               align-items: center;
+            }
          }
       }
    }
+
    & .imageContainer {
       width: 50%;
       padding-right: 30px;
@@ -83,10 +84,11 @@
       height: 450px;
       width: 350px;
       & .barra {
-         width: 40px;
+         width: 15px;
       }
       & .mainbody {
          height: 100%;
+         width: 435px;
          flex-direction: column;
 
          & .info {

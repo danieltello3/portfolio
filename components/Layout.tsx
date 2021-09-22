@@ -18,6 +18,7 @@ const Layout = ({
                content="Portafolio personal, desarrollo web y fotografía"
             />
             <link rel="icon" href="/favicon_dt.ico" />
+            <meta name="theme-color" content="#333333" />
             <meta property="og:image" content="/OG-portfolio.png" />
             <meta name="og:title" content="Daniel Tello | Portafolio" />
             <meta name="twitter:card" content="summary_large_image" />
