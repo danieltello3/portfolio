@@ -83,8 +83,8 @@ const Proyecto = (props: TProyecto) => {
                   src={image.url}
                   alt={image.name}
                   layout="intrinsic"
-                  width="380.6"
-                  height="190.2"
+                  width={800}
+                  height={450}
                   className={proyectStyle.image}
                />
             </div>

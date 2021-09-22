@@ -56,11 +56,11 @@ const Contacto = () => {
          <div className={styles.text}>
             <h1>HOLA!</h1>
             <p>¿Solo quieres saludar?</p>
-            <p>¿quieres preguntarme algo?</p>
+            <p>¿Quieres preguntarme algo?</p>
             <p>
-               Usa el siguiente formulario para contactarme, si deseas una
-               respuesta más inmediata, podrías contactarme a alguna de mis
-               redes sociales, las encuentras abajo de todo.
+               Usa el siguiente formulario para contactarme.
+               <br /> Si deseas una respuesta más inmediata, escríbeme a alguna
+               de mis redes sociales, las encuentras en la parte inferior.
             </p>
          </div>
          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
@@ -108,7 +108,7 @@ const Contacto = () => {
                Teléfono
             </label>
             <input
-               type="number"
+               type="tel"
                id="phone"
                className={
                   errors.phone

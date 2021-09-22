@@ -11,11 +11,11 @@ import Layout from "../components/Layout";
 
 export const getStaticProps: GetStaticProps = async () => {
    const res = await axios.get(
-      `${process.env.BACKEND_URL}/images/612d8e9128bfb31428f5d1da`
+      `${process.env.BACKEND_URL}/images/614a81053bd7980016c56fe0`
    );
    const imageData: IImage = await res.data.content;
    const resProject = await axios.get(
-      `${process.env.BACKEND_URL}/project/61492fe151b479001660236c`
+      `${process.env.BACKEND_URL}/project/614ad1694837280016ec78be`
    );
    const projectData: TProyecto = resProject.data.content;
    return {
@@ -37,10 +37,11 @@ const Home = ({
                      <h3>Daniel Tello</h3>
                      <h6>Web Developer</h6>
                      <p>
-                        Apasionado a la tecnología, con muchas ganas de ampliar
-                        mi conocimiento y experiencia en el desarrollo web. Me
-                        gusta tomar fotos, así que comparto por aquí algunas de
-                        mis mejores fotos.
+                        En busca de ampliar mi conocimiento y experiencia en el
+                        desarrollo web.
+                        <br /> Editor, diseñador y fotográfo por pasión. <br />
+                        Uno de mis pasatiempos es tomar fotos, aqui comparto
+                        algunas de mis favoritas.
                      </p>
                   </div>
                   <div className={styles.image}>
@@ -93,8 +94,8 @@ const Home = ({
                   <Image
                      src={imageData.url}
                      alt={imageData.name}
-                     width={imageData.width * 400}
-                     height={imageData.height * 400}
+                     width={imageData.width * 300}
+                     height={imageData.height * 300}
                   />
                   <Link href="/fotos">
                      <a className={styles.links}>

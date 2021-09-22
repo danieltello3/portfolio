@@ -40,8 +40,16 @@ const Fotos = ({ data }: { data: Array<IImage> }) => {
                      <div className={photoStyles.photoHolder} key={foto._id}>
                         <Image
                            src={foto.url}
-                           width={foto.width * 550}
-                           height={foto.height * 550}
+                           width={
+                              foto.width > 4
+                                 ? foto.width * 150
+                                 : foto.width * 300
+                           }
+                           height={
+                              foto.height > 4
+                                 ? foto.height * 150
+                                 : foto.height * 300
+                           }
                            alt={foto.name}
                         />
                         <div className={photoStyles.info}>
