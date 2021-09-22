@@ -108,7 +108,7 @@ const Contacto = () => {
                Teléfono
             </label>
             <input
-               type="number"
+               type="tel"
                id="phone"
                className={
                   errors.phone

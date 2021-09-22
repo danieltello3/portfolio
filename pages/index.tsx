@@ -11,7 +11,7 @@ import Layout from "../components/Layout";
 
 export const getStaticProps: GetStaticProps = async () => {
    const res = await axios.get(
-      `${process.env.BACKEND_URL}/images/612d8e9128bfb31428f5d1da`
+      `${process.env.BACKEND_URL}/images/614a81053bd7980016c56fe0`
    );
    const imageData: IImage = await res.data.content;
    const resProject = await axios.get(
