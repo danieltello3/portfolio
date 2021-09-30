@@ -70,7 +70,7 @@ const Contacto = () => {
             <input
                type="text"
                id="name"
-               autoFocus={true}
+               autoFocus
                className={
                   errors.name
                      ? `${styles.form__input} ${styles.error}`
