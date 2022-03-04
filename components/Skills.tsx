@@ -13,6 +13,8 @@ import postgres from "../public/Postgresql.png";
 import python from "../public/python.png";
 import typescript from "../public/Typescript.png";
 import express from "../public/Expressjs.png";
+import csharp from "../public/csharp.png";
+import netcore from "../public/NETCore.png";
 
 const skills = [
    { img: html, alt: "Html" },
@@ -22,8 +24,8 @@ const skills = [
    { img: react, alt: "React" },
    { img: python, alt: "Python" },
    { img: git, alt: "Git" },
-   { img: django, alt: "Django" },
-   { img: flask, alt: "Flask" },
+   { img: csharp, alt: "C#" },
+   { img: netcore, alt: ".Net Core" },
    { img: nodejs, alt: "NodeJS" },
    { img: postgres, alt: "PostgreSQL" },
    { img: mongodb, alt: "MongoDB" },

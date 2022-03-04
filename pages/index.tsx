@@ -39,6 +39,8 @@ const Home = ({
                      <p>
                         En busca de ampliar mi conocimiento y experiencia en el
                         desarrollo web.
+                        <br />
+                        Curioso por blockchain, cryptos, WEB3.0
                         <br /> Editor, diseñador y fotográfo por pasión. <br />
                         Uno de mis pasatiempos es tomar fotos, aqui comparto
                         algunas de mis favoritas.
